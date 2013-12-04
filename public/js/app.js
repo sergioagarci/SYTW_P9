@@ -12,5 +12,17 @@ $(documento).ready(function() {
                     $("#"+event.target.id).addClass("circle");
                     $("#"+data).addClass( "cross" );
                 }
+                else{
+                    alert("La casilla está ocupada, por favor escoja otra");
+                }
                 
+            }
+            else{ 
+                setTimeout(function(){
+                url = data;
+                $(location).attr('href',url);
+                },200);
+    		}
+        });
+    });
 });
